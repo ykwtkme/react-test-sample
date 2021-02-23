@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "sourceMap": true,
-    "module": "commonjs",
+    "module": "esnext",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "target": "es5",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "lib": [
       "dom",
       "es6"
@@ -15,8 +15,15 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    // 絶対パスでモジュールをインポートする
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "noEmit": true
   },
   "include": [
     "src"
