@@ -10,6 +10,12 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
+  "devDependencies": {
+    "@testing-library/react": "^11.2.5",
+    "husky": "^5.1.1",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -34,10 +40,20 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@testing-library/react": "^11.2.5",
-    "husky": "^5.1.1",
-    "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1"
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
   }
 }
