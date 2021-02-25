@@ -18,7 +18,9 @@ const useStyles = makeStyles({
 interface Props extends BaseComponentProps {
   items: {
     name: string,
-    category: string,
+    category?: {
+      name: string,
+    }
     weight: number,
     price: number
   }[]
@@ -44,7 +46,9 @@ const ProductList: React.FC<Props> = (props) => {
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right">{row.category}</TableCell>
+              <TableCell align="right">
+                {row.category.name}
+              </TableCell>
               <TableCell align="right">{row.weight}</TableCell>
               <TableCell align="right">{row.price}</TableCell>
             </TableRow>

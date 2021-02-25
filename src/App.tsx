@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.scss';
 
-import ProductPage from "./pages/productPage";
-import HomePage from "./pages/homePage";
+import ProductPage from "./pages/productPage/productPage";
+import HomePage from "./pages/homePage/homePage";
 
 const App: React.FC = () => {
   return (
