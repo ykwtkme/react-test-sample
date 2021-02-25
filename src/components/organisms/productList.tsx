@@ -47,8 +47,9 @@ const ProductList: React.FC<Props> = (props) => {
                 {row.name}
               </TableCell>
               <TableCell align="right">
-                {row.category.name}
+                {row.category?.name}
               </TableCell>
+              <TableCell align="right">{row.weight}</TableCell>
               <TableCell align="right">{row.weight}</TableCell>
               <TableCell align="right">{row.price}</TableCell>
             </TableRow>
