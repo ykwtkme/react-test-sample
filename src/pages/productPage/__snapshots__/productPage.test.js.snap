@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`check productpage renders renders productpage 1`] = `
-<DocumentFragment>
-  <roductpage />
-</DocumentFragment>
-`;
